@@ -44,6 +44,10 @@ public class boat_controller : MonoBehaviour
             {
                 acceleration -= 0.1f;
             }
+            if (acceleration < 0.0f)
+            {
+                acceleration += 0.1f;
+            }
         }
 
         //If the player is not supposed to be moving, explicitly tell him so.
