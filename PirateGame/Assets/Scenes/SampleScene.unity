@@ -421,7 +421,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620323430}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: cecc026fdc49fc94e8aac87333e3fcec, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -436,13 +436,28 @@ Rigidbody:
   m_GameObject: {fileID: 620323430}
   serializedVersion: 2
   m_Mass: 100
-  m_Drag: 0
+  m_Drag: 1
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &620323441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620323430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7423290a03c156429fb39e8fbb02703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Rb: {fileID: 620323438}
+  depthBeforeSubmerge: 0
+  displacementAmount: 5
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,7 +715,7 @@ TerrainCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635997183}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: cecc026fdc49fc94e8aac87333e3fcec, type: 2}
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: 14fa1b5435c01d649855516374cb546d, type: 2}
   m_EnableTreeColliders: 0
@@ -840,12 +855,12 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.42744365, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.42744082, b: 0.6784314, a: 1}
   colorDepth: 2.59
-  horizonColor: {r: 0, g: 0.22744364, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22744083, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30195343, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.3019506, a: 0}
   shoreStrength: 0
   shoreBlend: 0
   shoreDepth: 0
