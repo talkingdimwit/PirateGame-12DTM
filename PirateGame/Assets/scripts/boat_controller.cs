@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class boat_controller : MonoBehaviour
 {
-    float acceleration = 0.0f;
+    public float acceleration = 0.0f;
     // Use this for initialization
     void Start()
     {
@@ -57,7 +57,7 @@ public class boat_controller : MonoBehaviour
         }
         //Move the character in its own forward direction while taking acceleration and time into account.
         transform.Translate(transform.forward * acceleration * Time.deltaTime, Space.World);
-    }
+}
     //Gathers input to rotate the character.
     void RotateCharacter()
     {
