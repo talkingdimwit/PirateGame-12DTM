@@ -5,6 +5,9 @@ using UnityEngine;
 public class boat_controller : MonoBehaviour
 {
     public float acceleration = 0.0f;
+    public Camera mapCamera;
+    public Camera mainCamera;
+    public bool mapOpen = false;
     // Use this for initialization
     void Start()
     {
@@ -14,6 +17,7 @@ public class boat_controller : MonoBehaviour
     {
         MoveCharacter();
         RotateCharacter();
+        SwitchCamera();
     }
     //Gathers input to move the character
     void MoveCharacter()
@@ -72,6 +76,28 @@ public class boat_controller : MonoBehaviour
         {
             //Rotates the player to the right
             transform.Rotate(transform.up, -100.0f * Time.deltaTime, Space.World);
+        }
+    }
+
+    public void SwitchCamera()
+    {
+        while (mapOpen == false)
+        {
+            if (Input.GetKeyDown(KeyCode.M))
+            {
+                mainCamera.enabled = false;
+                mapCamera.enabled = true;
+                mapOpen = true;
+            }
+        }
+        while (mapOpen == true)
+        {
+            if (Input.GetKeyDown(KeyCode.M))
+            {
+                mainCamera.enabled = true;
+                mapCamera.enabled = false;
+                mapOpen = false;
+            }
         }
     }
 }
