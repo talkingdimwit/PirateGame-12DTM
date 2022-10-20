@@ -12,7 +12,9 @@ public class boat_controller : MonoBehaviour
     public TextMeshProUGUI chestsText;
     public TextMeshProUGUI startText;
     public TextMeshProUGUI startTitleText;
+    public TextMeshProUGUI win;
     public bool startMenu = true;
+    public bool end = false;
     public Camera mainCamera;
     public Camera mapCamera;
     public Camera startCamera;
@@ -23,6 +25,7 @@ public class boat_controller : MonoBehaviour
         mainCamera.enabled = false;
         mapCamera.enabled = false;
         chestsText.text = "";
+        win.text = "";
     }
     // Update is called once per frame
     void Update()
@@ -36,13 +39,20 @@ public class boat_controller : MonoBehaviour
                 mainCamera.enabled = true;
             }
         }
-        if (startMenu == false)
+        if (startMenu == false & end == false)
         {
             startText.text = "";
             startTitleText.text = "";
             chestsText.text = "Chests: " + chests;
             MoveCharacter();
             RotateCharacter();
+        }
+        if (chests == 6)
+        {
+            end = true;
+            rb.constraints = RigidbodyConstraints.FreezeAll;
+            chestsText.text = "";
+            win.text = "YOU WIN";
         }
     }
     //Gathers input to move the character
