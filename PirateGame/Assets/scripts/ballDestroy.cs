@@ -26,5 +26,9 @@ public class ballDestroy : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (collision.collider.gameObject.CompareTag("enemy"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
