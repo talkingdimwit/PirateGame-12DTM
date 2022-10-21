@@ -10,10 +10,10 @@ public class topdown_cam : MonoBehaviour
     public Transform camTransform;
     // offset between camera and target
     public Vector3 Offset;
-    // change this value to get desired smoothness
+    // change smoothness
     public float SmoothTime = 0.3f;
 
-    // This value will change at the runtime depending on target movement. Initialize with zero vector.
+    // makes sure the camera starts with no movement
     private Vector3 velocity = Vector3.zero;
 
     private void Start()
