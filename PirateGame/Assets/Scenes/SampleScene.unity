@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -30186,6 +30186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1280356994}
   - component: {fileID: 1280356993}
+  - component: {fileID: 1280356995}
   m_Layer: 0
   m_Name: Xspot (3)
   m_TagString: Untagged
@@ -30260,6 +30261,19 @@ Transform:
   m_Father: {fileID: 587889300}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1280356995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280356992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 118ad60e51bce8f4ba32706a96efac02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 77336947}
 --- !u!1 &1296600320
 GameObject:
   m_ObjectHideFlags: 0
@@ -34339,6 +34353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1520283921}
   - component: {fileID: 1520283920}
+  - component: {fileID: 1520283922}
   m_Layer: 0
   m_Name: Xspot
   m_TagString: Untagged
@@ -34413,6 +34428,19 @@ Transform:
   m_Father: {fileID: 587889300}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1520283922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520283919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 118ad60e51bce8f4ba32706a96efac02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 764861186}
 --- !u!1 &1527290606
 GameObject:
   m_ObjectHideFlags: 0
@@ -37977,6 +38005,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1685961543}
   - component: {fileID: 1685961542}
+  - component: {fileID: 1685961544}
   m_Layer: 0
   m_Name: Xspot (2)
   m_TagString: Untagged
@@ -38051,6 +38080,19 @@ Transform:
   m_Father: {fileID: 587889300}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1685961544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685961541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 118ad60e51bce8f4ba32706a96efac02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 40067635}
 --- !u!1 &1693866232
 GameObject:
   m_ObjectHideFlags: 0
@@ -42344,6 +42386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1921613172}
   - component: {fileID: 1921613173}
+  - component: {fileID: 1921613174}
   m_Layer: 0
   m_Name: Xspot (5)
   m_TagString: Untagged
@@ -42418,6 +42461,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1921613174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921613171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 118ad60e51bce8f4ba32706a96efac02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 2000241654}
 --- !u!1 &1934144744
 GameObject:
   m_ObjectHideFlags: 0
@@ -42428,6 +42484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1934144746}
   - component: {fileID: 1934144745}
+  - component: {fileID: 1934144747}
   m_Layer: 0
   m_Name: Xspot (1)
   m_TagString: Untagged
@@ -42502,6 +42559,19 @@ Transform:
   m_Father: {fileID: 587889300}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1934144747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934144744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 118ad60e51bce8f4ba32706a96efac02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 1908840660}
 --- !u!1 &1936307884
 GameObject:
   m_ObjectHideFlags: 0
@@ -46582,12 +46652,12 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.42740273, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.42740253, b: 0.6784314, a: 1}
   colorDepth: 2.59
-  horizonColor: {r: 0, g: 0.22740275, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22740254, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30191255, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.3019123, a: 0}
   shoreStrength: 0
   shoreBlend: 0
   shoreDepth: 0
